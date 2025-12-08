@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 /// A forwarding address associated with a mailbox.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Forwarding {
     pub address: String,
     pub blocked_at: Option<String>,

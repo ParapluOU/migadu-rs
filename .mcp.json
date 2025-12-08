@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "migadu": {
+      "command": "cargo",
+      "args": ["run", "--quiet", "--package", "migadu-mcp"],
+      "env": {
+        "MIGADU_EMAIL": "",
+        "MIGADU_API_KEY": "",
+        "MIGADU_DOMAIN": ""
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 /// An email alias that forwards to one or more destinations.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Alias {
     pub local_part: String,
     pub domain_name: String,

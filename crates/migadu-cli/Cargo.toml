@@ -1,0 +1,17 @@
+[package]
+name = "migadu-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Command-line interface for Migadu email hosting"
+
+[[bin]]
+name = "migadu"
+path = "src/main.rs"
+
+[dependencies]
+migadu-client = { path = "../migadu-client" }
+clap.workspace = true
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true

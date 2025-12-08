@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 /// An identity associated with a mailbox.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Identity {
     pub local_part: String,
     pub domain_name: String,

@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 /// A rewrite rule that matches patterns and forwards to destinations.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Rewrite {
     pub name: String,
     #[serde(default)]

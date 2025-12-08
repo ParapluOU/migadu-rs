@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 /// A mailbox in the Migadu system.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Mailbox {
     pub local_part: String,
     pub domain_name: String,

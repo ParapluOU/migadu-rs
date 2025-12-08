@@ -3,10 +3,10 @@
 //! # Example
 //!
 //! ```no_run
-//! use migadu::{MigaduClient, CreateMailbox};
+//! use migadu_client::{MigaduClient, CreateMailbox};
 //!
 //! #[tokio::main]
-//! async fn main() -> migadu::Result<()> {
+//! async fn main() -> migadu_client::Result<()> {
 //!     let client = MigaduClient::new("user@example.com", "api-key");
 //!
 //!     // List all mailboxes

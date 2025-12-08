@@ -1,0 +1,18 @@
+[package]
+name = "migadu-mcp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "MCP server for Migadu email hosting API"
+
+[[bin]]
+name = "migadu-mcp"
+path = "src/main.rs"
+
+[dependencies]
+migadu-client = { path = "../migadu-client" }
+rust-mcp-sdk = { version = "0.7", default-features = false, features = ["server", "stdio", "2025_06_18"] }
+async-trait = "0.1"
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true

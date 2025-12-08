@@ -6,7 +6,7 @@
 //! - MIGADU_API_KEY: Your Migadu API key
 //! - MIGADU_DOMAIN: The domain to test with
 
-use migadu::{
+use migadu_client::{
     CreateAlias, CreateIdentity, CreateMailbox, CreateRewrite, MigaduClient, UpdateAlias,
     UpdateIdentity, UpdateMailbox, UpdateRewrite,
 };
